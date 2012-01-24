@@ -17,6 +17,14 @@ ssh1ctest.o: ssh1ctest.cpp
 1c: $(OBJS) ssh1ctest.o
 	$(CC) -o 1ct $(OBJS) ssh1ctest.o $(LIBS)
 
+cli: clitest.cpp
+	${CC} $(INCLUDE) -c clitest.cpp
+	$(CC) -o cli clitest.o $(LIBS)
+
+srv: srvtest.cpp
+	$(CC) $(INCLUDE) -c srvtest.cpp
+	$(CC) -o srv srvtest.o $(LIBS)
+
 clean:
 	rm -f *.o
 	rm -f 1ct
