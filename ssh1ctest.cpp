@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <libssh/libssh.h>
+#include <ssh1c.h>
 
 enum exitcodes {
 	ERROR1	= -1,
@@ -8,6 +9,10 @@ enum exitcodes {
 
 int main (int argc, char * argv[])
 {
+	// input settings
+	//
+	//
+	/*
 	ssh_session my_ssh_ses;
 	int verb = SSH_LOG_PROTOCOL;
 	int port = 22;
@@ -17,5 +22,6 @@ int main (int argc, char * argv[])
 		return (-1);
 
 	ssh_free(my_ssh_ses);
+	*/
 	return 0;
 }
